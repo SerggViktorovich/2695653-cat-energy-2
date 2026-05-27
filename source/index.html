@@ -1,46 +1,154 @@
+
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Cat Energy — Функциональное питание для котов</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
-    <header class="main-header page-container">
-
-
-   <nav class="navigation">
-    <a class="main-header__logo logo logo--image" href="#">
-     <img class="logo__image"  src="/image/logo-mobile.svg"  width="202" height="59" alt="logo">
-   </a>
- <ul class="navigation__list">
-  <li class="navigation_item navigation_item--current">
-   <a class="navigation_link" href="index.html">Главная</a>
-  </li>
- <li class="navigation_item navigation_item--current">
-  <a class="navigation_link" href="catalog.html">Каталог продукции</a>
- </li>
-  <li class="navigation_item navigation_item--current">
-  <a class="navigation_link" href="#">Подбор программы</a>
- </li>
-   </ul>
-   <button class="navigation__menu-button" type="button">
-    <span class="visually-hidden">Переключение меню</span>
-   </button>
-   </nav>
+<body class="page__body">
+<!-- Блок Шапка (Header) -->
+<header class="header">
+<!-- Элемент Логотипа -->
+ <div class="logo header__logo">
+  <img src="/image/logo-desktop (1).svg" alt="Логотип Cat Energy" width="202" height="59">
+</div>
+<!-- Элемент Навигационного меню -->
+<nav class="nav header__nav">
+ <ul class="menu nav__menu">
+  <li class="menu__item"><a href="#" class="menu__link menu__link--active">главная</a></li>
+  <li class="menu__item"><a href="#" class="menu__link">каталог продукции</a></li>
+  <li class="menu__item"><a href="#" class="menu__link">подбор программы</a></li>
+ </ul>
+</nav>
 </header>
-
-<main class="main-container page_container">
-<section class="main-description">
-<img class="main-description__image"
-src="/image/index-can-mobile 1.png"
-width="280"
-height="270"
-alt="cat energy product">
-
+<!-- Блок Главного контента (Hero-блок) -->
+<main class="main-content">
+ <section class="hero">
+<!-- Левая колонка с текстом -->
+  <div class="hero__content-block hero__content-block--left">
+   <h1 class="hero__title">Функциональное питание для котов</h1>
+   <p class="hero__subtitle">занялся собой? займись котом</p>
+<!-- Элемент Кнопки -->
+  <button class="button hero__button hero__button--green" type="button">подобрать программу</button>
+  </div>
+ <!-- Правая колонка с изображением -->
+   <div class="hero__image-block hero__content-block--right">
+   <img src="/image/index-can.jpg" alt="Пакет корма Cat Energy с курицей" width="552" height="499" class="hero__image"> >
+  </div>
+ </section>
+ <!-- Блок Секции с предложениями -->
+<section class="offers">
+<!-- Блок: Похудение (Левая секция) -->
+<div class="offer offers__offer offers__offer--left">
+<div class="offer__icon">
+</div>
+ <h2 class="offer__title">похудение</h2>
+ <p class="offer__text">
+Ваш кот мечтает блистать в новом сезоне и снизить избыточный вес?
+Пора на диету! Серия Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+ </p>
+<!-- Элемент Кнопки-ссылки -->
+ <a href="#" class="button offer__button">каталог slim</a>
+</div>
+<!-- Блок: Набор массы (Правая секция) -->
+<div class="offer offers__offer offers__offer--right">
+ <h2 class="offer__title">набор массы</h2>
+ <p class="offer__text">
+Подкачать мускулатуру, стать сильнее и активнее?
+Серия Cat Energy Pro поможет вашему коту нарастить необходимую мышечную массу!
+ </p>
+<!-- Элемент Кнопки-ссылки -->
+ <a href="#" class="button offer__button">каталог pro</a>
+</div>
 </section>
+
+<!-- Блок: Как это работает -->
+<section class="how-it-works">
+ <h2 class="how-it-works__title">Как это работает</h2>
+ <!-- Элемент: Шаг 1 -->
+<div class="step how-it-works__step how-it-works__step--1">
+<div class="step__content">
+  <p class="step__text">Функциональное питание содержит только полезные натуральные вещества.</p>
+</div>
+</div>
+<!-- Элемент: Шаг 2 -->
+<div class="step how-it-works__step how-it-works__step--2">
+<div class="step__content">
+ <p class="step__text">Выпускается в виде порошка, который удобно давать вместе с едой.</p>
+</div>
+</div>
+ <!-- Элемент: Шаг 3 -->
+<div class="step how-it-works__step how-it-works__step--3">
+<div class="step__content">
+ <p class="step__text">Заменяет один или несколько приёмов пищи на основе функционального питания.</p>
+</div>
+</div>
+ <!-- Элемент: Шаг 4 -->
+<div class="step how-it-works__step how-it-works__step--4">
+<div class="step__content">
+ <p class="step__text">Уже через месяц вы заметите улучшение внешнего вида и здоровья вашего питомца!</p>
+</div>
+</div>
+</section>
+<!-- Блок: Живой пример -->
+<section class="case-study">
+ <h2 class="case-study__title">Живой пример</h2>
+<div class="case-study__content">
+ <div class="case-study__stats">
+<!-- Элемент: Статистика веса -->
+<div class="stat case-study__stat">
+ <span class="stat__value">5 КГ</span>
+ <span class="stat__label">потеря веса</span>
+</div>
+<!-- Элемент: Статистика времени -->
+<div class="stat case-study__stat">
+  <span class="stat__value">60 ДНЕЙ</span>
+  <span class="stat__label">продолжительность программы</span>
+</div>
+<!-- Элемент: Стоимость -->
+<div class="stat case-study__stat">
+ <span class="stat__value">15 000 РУБ.</span>
+ <span class="stat__label">затраты на питание</span>
+</div>
+</div>
+<!-- Элемент: Изображение кота -->
+<div class="case-study__image-block">
+ <img src="#" alt="До и после: кот до и после применения корма" class="case-study__image">
+</div>
+</div>
+</section>
+<!-- Блок: контакты -->
+ <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
+    <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <div class="contacts__map"></div>
+  </section>
 </main>
-  </body>
+<!-- Блок: Подвал страницы (Footer) -->
+<footer class="footer">
+<!-- Элемент: Логотип бренда -->
+<div class="footer__logo-block">
+ <a href="/" class="footer__logo">
+ <span class="footer__logo-text">CAT ENERGY</span>
+ </a>
+</div>
+<!-- Элемент: Социальные сети и мессенджеры -->
+<div class="footer__social">
+ <a href="#" class="footer__social-link">vk</a>
+ <a href="#" class="footer__social-link">telegram</a>
+ <a href="#" class="footer__social-link">youtube</a>
+</div>
+    <!-- Элемент: Информация об школе -->
+<div class="footer__copyright">
+ <span class="footer__text">HTML Academy</span>
+ <img src="# alt="Логотип HTML Academy" class="footer__logo-academy">
+</div>
+</footer>
+
+</body>
 </html>
+
